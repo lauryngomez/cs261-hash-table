@@ -17,6 +17,7 @@ class HashTable:
         self.keys.append(key)
 
     def __getitem__(self, key):
-        pass
-        # for k in self.keys:
-        #     if k == p 
+        for k in self.keys:
+            if k == key:
+                return self.data[k]
+        return None
