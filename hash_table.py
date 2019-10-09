@@ -5,5 +5,18 @@
 
 
 class HashTable:
+    def __init__(self, size = 10):
+        self.size = size
+        self.data = []
+        self.keys = []
 
-    pass
+    def __setitem__(self, key, value):
+        # self.data = value
+        # self.keys = key
+        self.data.append(value)
+        self.keys.append(key)
+
+    def __getitem__(self, key):
+        pass
+        # for k in self.keys:
+        #     if k == p 
